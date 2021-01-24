@@ -1,14 +1,31 @@
-import React from 'react';
-
+import React from "react";
 const Heading = () => {
-    return (
-        <div className="jumbotron jumbotron-fluid">
-            <div className="container">
-                <h1 className="display-4">Employee Directory</h1>
-                <p className="lead">Click on carrots to filter by heading or use the search box to narrow your results.</p>
-            </div>
+  return (
+    <>
+      <div
+        style={{
+          backgroundColor: "#9e8a5a",
+          borderBottomWidth: 10,
+          borderBottomColor: "green",
+          borderBottomStyle: "solid",
+          padding: 20,
+        }}
+      >
+        <div
+          className="container"
+          style={{
+            color: "white",
+            textAlign: "center",
+            fontFamily: "Arial",
+          }}
+        >
+          <h1>Employee Directory</h1>
+          <h4>
+          Click on filter by heading or use the search box to narrow your results.
+          </h4>
         </div>
-    );
+      </div>
+    </>
+  );
 };
-
 export default Heading;
