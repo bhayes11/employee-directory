@@ -4,9 +4,9 @@ const Heading = () => {
     <>
       <div
         style={{
-          backgroundColor: "#9e8a5a",
+          backgroundColor: "#807b71",
           borderBottomWidth: 10,
-          borderBottomColor: "green",
+          borderBottomColor: "#cfccc8",
           borderBottomStyle: "solid",
           padding: 20,
         }}
