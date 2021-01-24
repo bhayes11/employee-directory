@@ -9,7 +9,8 @@ function App() {
     <Router basename="/">
       <Heading />
       <Search />
-      <Home />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/home" component={Home} />
     </Router>
   );
 }
