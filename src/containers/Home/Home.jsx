@@ -32,6 +32,41 @@ const Home = () => {
   };
   return (
     <>
+      <div className="container">
+        <Search onChange={handleFilterName} />
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col">Image</th>
+              <th scope="col">
+                <a
+                  onClick={handleSortName}
+                  style={{
+                    color: "green",
+                    textAlign: "center",
+                  }}
+                >
+                  First Name
+                </a>
+              </th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            {employee.map((employee) => (
+              <tr key={employee.email}>
+                <td>
+                  <img src={employee.picture.thumbnail} />
+                </td>
+                <td>{employee.name.first}</td>
+                <td>{employee.name.last}</td>
+                <td>{employee.email}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </>
   );
 };

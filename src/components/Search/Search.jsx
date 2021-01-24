@@ -19,7 +19,7 @@ function Search(props) {
                 <input
                   className="form-control mr-sm-2"
                   type="Search"
-                  placeholder="Search"
+                  placeholder="employee search"
                   aria-label="Search"
                   onChange={props.onChange}
                   style={styles.form}
